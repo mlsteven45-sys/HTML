@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Colombia</title>
+  
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warning fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">
+        <img src="img/logo.jpeg" alt="Logo" width="70" class="me-2">
+        Travel Colombia
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fw-bold">
+          <li class="nav-item"><a class="nav-link" href="#showcase">Bienvenido</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">¿Quiénes somos?</a></li>
+          <li class="nav-item"><a class="nav-link" href="#designers">Reserva Alternativa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#packages">Reserva</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="container" style="margin-top: 100px;">
+    
+    <!-- Showcase -->
+    <section id="showcase" class="text-center">
+      <h1 class="display-4 fw-bold">Travel Colombia</h1>
+      <h2 class="text-warning">Nuestros servicios</h2>
+      <hr class="border-5 border-warning w-50 mx-auto">
+    </section>
+
+    <!-- Galería de fotos -->
+    <section class="row g-3 mt-4">
+      <div class="col-md-6">
+        <img src="img/amazonas.jpg" class="img-fluid rounded shadow" alt="Viaje 1" onclick="openModal(this)">
+        <img src="img/cartagena de indias.jpg" class="img-fluid rounded shadow mt-3" alt="Viaje 2" onclick="openModal(this)">
+        <img src="img/eje cafetero.jpg" class="img-fluid rounded shadow mt-3" alt="Viaje 3" onclick="openModal(this)">
+      </div>
+      <div class="col-md-6">
+        <img src="img/el peñol guatape.jpg" class="img-fluid rounded shadow" alt="Viaje 4" onclick="openModal(this)">
+        <img src="img/la guajira.jpg" class="img-fluid rounded shadow mt-3" alt="Viaje 5" onclick="openModal(this)">
+        <img src="img/santa marta.jpg" class="img-fluid rounded shadow mt-3" alt="Viaje 6" onclick="openModal(this)">
+      </div>
+    </section>
+
+    <!-- Modal galería -->
+    <div class="modal fade" id="imageModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark">
+          <img id="modalImg" class="img-fluid rounded">
+          <p id="caption" class="text-white text-center mt-2"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Servicios -->
+    <section id="services" class="mt-5 container p-5 my-5 bg-warning text-white opacity-40">
+      <h2 class="text-white text-center fw-bold">Nuestra M.V.V.</h2>
+      <hr class="border-5 border-warning w-50">
+      <p><b>Misión:</b> Otorgarle a nuestros clientes una aplicación (de viajes) para mejorar el desarrollo de herramienta tecnológica con contenido novedoso y único para poder brindarles un mejor viaje.</p>
+      <p><b>Visión:</b> Convertirnos en la aplicación líder en la creación de la herramienta para viajar combinado conocimiento innovación y diseño que nos posiciona como primera opción para viajar.</p>
+      <p><b>Valores:</b> Honestidad: para desarrollar y tratar con los clientes (internos y externos) Creatividad: para generar ideas superadas Responsabilidad: para llegar los objetivos planteados Ambición: para superar los objetivos planteados y las expectativas creadas Esfuerzo: para atrapar quienes serian nuestros clientes.</p>
+    </section>
+
+    <!-- Reservas alternativas -->
+    <section id="designers" class="mt-5">
+      <h2 class="text-warning fw-bold">Reservas alternativas</h2>
+      <hr class="border-5 border-warning w-50">
+      <p>Reserva con opciones predeterminadas de fecha, hora y auto.</p>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/NIssan.jpeg" class="card-img-top" alt="Nissan">
+            <div class="card-body">
+              <h5 class="card-title">Medellín - Bogotá</h5>
+              <p class="text-muted">NISSAN JUKE</p>
+              <p>Fecha: 03/11/17 <br> Hora: 3:00 PM <br> Costo: $150.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/Mazda.jpeg" class="card-img-top" alt="Mazda">
+            <div class="card-body">
+              <h5 class="card-title">Medellín - Barranquilla</h5>
+              <p class="text-muted">MAZDA 3</p>
+              <p>Fecha: 26/11/17 <br> Hora: 9:00 PM <br> Costo: $125.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/chevrolet.jpeg" class="card-img-top" alt="Chevrolet">
+            <div class="card-body">
+              <h5 class="card-title">Medellín - Cali</h5>
+              <p class="text-muted">Chevrolet Spark</p>
+              <p>Fecha: 21/12/17 <br> Hora: 6:00 AM <br> Costo: $110.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservas personalizadas -->
+    <section id="packages" class="mt-5">
+      <h2 class="text-warning fw-bold">Reserva</h2>
+      <hr class="border-5 border-warning w-50">
+      <p>Elige tu reserva personalizada según tus necesidades.</p>
+
+      <div class="row g-4">
+        <!-- IDA -->
+        <div class="col-md-6">
+          <div class="card text-center">
+            <div class="card-header bg-warning text-dark">Reserva (IDA)</div>
+            <div class="card-body">
+              <input class="form-control mb-2" placeholder="Dirección recogida">
+              <input class="form-control mb-2" placeholder="Dirección ida">
+              <input class="form-control mb-2" placeholder="Ciudad">
+              <input class="form-control mb-2" placeholder="Hora">
+              <input class="form-control mb-2" placeholder="D/M/A">
+              <h4 class="mt-3">$150.000</h4>
+              <button class="btn btn-dark">RESERVAR</button>
+            </div>
+          </div>
+        </div>
+        <!-- IDA-VUELTA -->
+        <div class="col-md-6">
+          <div class="card text-center">
+            <div class="card-header bg-warning text-dark">Reserva (IDA - VUELTA)</div>
+            <div class="card-body">
+              <input class="form-control mb-2" placeholder="Dirección recogida">
+              <input class="form-control mb-2" placeholder="Dirección llegada">
+              <input class="form-control mb-2" placeholder="Ciudad recogida">
+              <input class="form-control mb-2" placeholder="Ciudad llegada">
+              <input class="form-control mb-2" placeholder="Hora recogida">
+              <input class="form-control mb-2" placeholder="Hora llegada">
+              <input class="form-control mb-2" placeholder="D/M/A">
+              <h4 class="mt-3">$200.000</h4>
+              <button class="btn btn-danger">RESERVAR</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto + Mapa -->
+    <section id="contact" class="mt-5">
+      <h2 class="text-warning fw-bold">Contacto</h2>
+      <hr class="border-5 border-warning w-50">
+      <form>
+        <input class="form-control mb-3" placeholder="Nombre" required>
+        <input class="form-control mb-3" placeholder="Correo" required>
+        <textarea class="form-control mb-3" placeholder="Mensaje" rows="4" required></textarea>
+        <button type="submit" class="btn btn-warning w-100">Enviar mensaje</button>
+      </form>
+
+      <!-- Google Maps -->
+      <div class="mt-4">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.842362!2d-75.5636!3d6.2518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429a9b7a9b7!2sMedell%C3%ADn%2C%20Colombia!5e0!3m2!1ses!2sco!4v1672345678901" 
+          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+<!-- Footer -->
+<footer class="bg-warning text-white pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row">
+      
+      <!-- Redes sociales -->
+      <div class="col-md-4 mb-3 text-center text-md-start">
+        <h5>Síguenos</h5>
+        <a href="#" class="text-white me-3 fs-4"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3 fs-4"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white me-3 fs-4"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+      </div>
+
+      <!-- Información de contacto -->
+      <div class="col-md-4 mb-3 text-center">
+        <h5>Contacto</h5>
+        <p>Email: contacto@travelcolombia.com</p>
+        <p>Tel: +57 300 123 4567</p>
+      </div>
+
+      <!-- Dirección -->
+      <div class="col-md-4 mb-3 text-center text-md-end">
+        <h5>Dirección</h5>
+        <p>Medellín, Antioquia</p>
+        <p>Colombia</p>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center mt-4">
+      <p class="mb-0">&copy; 2025 Travel Colombia. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Bootstrap + JS personalizado -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

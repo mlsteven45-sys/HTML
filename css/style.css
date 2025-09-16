@@ -1,0 +1,19 @@
+/* Fuente principal */
+body, h1, h2, h3, h4, h5 {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Espacios entre secciones */
+section {
+  padding-top: 40px;
+}
+
+/* Ajuste de imágenes */
+img {
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+img:hover {
+  opacity: 0.9;
+}
